@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="iOS/Teste1.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Teste1/Views/PageOneView.cs">
+    <Files>
+      <File FileName="Teste1/ViewModels/MenuViewModel.cs" Line="24" Column="10" />
+      <File FileName="Teste1/Views/PageOneView.cs" Line="44" Column="6" />
+      <File FileName="Teste1/Menu/HomeMenuItem.cs" Line="8" Column="2" />
+      <File FileName="Teste1/Views/MasterView.cs" Line="13" Column="28" />
+      <File FileName="Teste1/ViewModels/BaseViewModel.cs" Line="16" Column="32" />
+      <File FileName="Teste1/Menu/MenuType.cs" Line="9" Column="16" />
+      <File FileName="Teste1/Views/BaseView.cs" Line="4" Column="17" />
+      <File FileName="Teste1/Views/FeedbackView.cs" Line="28" Column="4" />
+      <File FileName="Teste1/Menu/BaseModel.cs" Line="3" Column="17" />
+      <File FileName="Teste1/ViewModels/IViewModel.cs" Line="3" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Teste1.Droid />
+</Properties>
