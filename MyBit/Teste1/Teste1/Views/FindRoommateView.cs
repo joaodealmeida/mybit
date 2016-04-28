@@ -24,6 +24,7 @@ namespace Teste1
 
 			this.Content = new StackLayout()
 			{
+				Padding=10,
 				Orientation = StackOrientation.Vertical,
 				Children = {
 					searchBar,
