@@ -11,7 +11,7 @@ namespace Teste1
 			{
 				VerticalOptions = LayoutOptions.Start,
 				HorizontalOptions = LayoutOptions.FillAndExpand,
-				RowSpacing = 0,
+				RowSpacing = 10,
 				ColumnSpacing = 0,
 				Padding = 10,
 				RowDefinitions = 
@@ -32,7 +32,7 @@ namespace Teste1
 			*/var date = new Label { Text = "Date " };
 			var time = new Label { Text = "Time " };
 			var duration = new Label { Text = "Duration " };
-			var room = new Label { Text = "Room " };
+			var room = new Label { Text = "Room " , HorizontalOptions=LayoutOptions.Center};
 			var durationEntry = new Entry {Placeholder = "1H"};
 			DatePicker datePicker = new DatePicker
 			{
@@ -46,7 +46,8 @@ namespace Teste1
 				Font = Font.SystemFontOfSize(NamedSize.Large),
 				BorderWidth = 1,
 				HorizontalOptions = LayoutOptions.Center,
-				VerticalOptions = LayoutOptions.CenterAndExpand
+				VerticalOptions = LayoutOptions.CenterAndExpand,
+				BackgroundColor = Color.Red
 			};
 			Button informal = new Button
 			{
@@ -56,6 +57,19 @@ namespace Teste1
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand
 			};
+			Button next = new Button
+			{
+				Text = "Next",
+				Font = Font.SystemFontOfSize(NamedSize.Large),
+				BorderWidth = 1,
+				HorizontalOptions = LayoutOptions.Center,
+				VerticalOptions = LayoutOptions.CenterAndExpand,
+					Command = new Command(() => 
+						{
+							this.Navigation.PushAsync(new FeedbackView());
+						})
+			};
+
 			mainGrid.Children.Add(date, 0, 0);
 			mainGrid.Children.Add (datePicker, 1, 0);
 			mainGrid.Children.Add(time, 0, 1);
@@ -65,6 +79,7 @@ namespace Teste1
 			mainGrid.Children.Add(room, 0, 3);
 			mainGrid.Children.Add(formal, 0, 4);
 			mainGrid.Children.Add(informal, 1, 4);
+			mainGrid.Children.Add(next, 1, 6);
 
 			this.Content = mainGrid;
 		}
