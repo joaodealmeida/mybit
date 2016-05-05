@@ -134,7 +134,7 @@ namespace myBit.Views
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Command = new Command(() =>
 					{
-						this.Navigation.PushAsync(new BookingMateView());
+						new BookingMateView();
 					})
 			};
 			grid.Children.Add(next,1,6,6,8);

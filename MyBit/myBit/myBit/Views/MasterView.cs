@@ -28,7 +28,10 @@ namespace myBit.Views
 		#region Menu
 		private HomeView home;
 		private AboutView about;
+		private LoginView login;
 		private FeedbackView feedback;
+		private RoomCalendarView roomCalendar;
+		private RoomInfoView roomInfo;
 		private DashboardView dashboard;
 		private MeetingRoomsView meetingRooms;
 		private FindRoommateView findRoommate;
@@ -77,29 +80,35 @@ namespace myBit.Views
 
 					PageSelection = about;
 					break;
-				case MenuType.MeetingRooms:
+				case MenuType.Booking:
 					if (meetingRooms == null)
 						meetingRooms = new MeetingRoomsView();
 
 					PageSelection = meetingRooms;
 					break;
-				case MenuType.Dashboard:
-					if (dashboard == null)
-						dashboard = new DashboardView();
+				case MenuType.Room:
+					if (roomCalendar == null)
+						roomCalendar = new RoomCalendarView();
 
-					PageSelection = dashboard;
+					PageSelection = roomCalendar;
 					break;
-				case MenuType.FindRoommate:
+				case MenuType.RoomInfo:
+					if (roomInfo == null)
+						roomInfo = new RoomInfoView();
+
+					PageSelection = roomInfo;
+					break;
+				case MenuType.SearchMate:
 					if (findRoommate == null)
 						findRoommate = new FindRoommateView();
 
 					PageSelection = findRoommate;
 					break;
-				case MenuType.SendNotification:
-					if (sendNotification == null)
-						sendNotification = new SendNotificationView();
+				case MenuType.Login:
+					if (login == null)
+						login = new LoginView();
 
-					PageSelection = sendNotification;
+					PageSelection = login;
 					break;
 				}
 			};
