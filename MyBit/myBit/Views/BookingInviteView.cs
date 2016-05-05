@@ -4,10 +4,9 @@ using Xamarin.Forms;
 
 namespace myBit.Views
 {
-	public class BookingRoomView : BaseView
+	public class BookingInviteView : ContentPage
 	{
-		SearchBar searchBar;
-		public BookingRoomView ()
+		public BookingInviteView ()
 		{
 			Grid mainGrid = new Grid()
 			{
@@ -26,27 +25,35 @@ namespace myBit.Views
 					new ColumnDefinition { Width = GridLength.Auto}
 				}
 				};
+			Label invite = new Label
+			{
+				Text = "Invite",
+				VerticalOptions = LayoutOptions.FillAndExpand,
+				FontSize = 25
+			};
+			Label date = new Label
+			{
+				Text = "19 November 2016",
+				VerticalOptions = LayoutOptions.FillAndExpand,
+				FontSize = 15
+			};
+			Label hour = new Label
+			{
+				Text = "16:30-17:30",
+				VerticalOptions = LayoutOptions.FillAndExpand,
+				FontSize = 15
+			};
 			Label room = new Label
 			{
-				Text = "Room",
+				Text = "Informal Room",
 				VerticalOptions = LayoutOptions.FillAndExpand,
-				FontSize = 25
+				FontSize = 15
 			};
-			Label resultsLabel = new Label
+			Label roomId = new Label
 			{
-				Text = "Result will appear here.",
+				Text = "roomId",
 				VerticalOptions = LayoutOptions.FillAndExpand,
-				FontSize = 25
-			};
-			searchBar = new SearchBar
-			{
-				Placeholder = "Enter search term",
-				SearchCommand = new Command(() => { resultsLabel.Text = "Result: " + searchBar.Text + " is what you asked for."; })
-			};
-			ScrollView results = new ScrollView {
-				HorizontalOptions = LayoutOptions.Center,
-				Content = resultsLabel,
-				VerticalOptions = LayoutOptions.FillAndExpand
+				FontSize = 15
 			};
 			Button back = new Button
 			{
@@ -57,28 +64,25 @@ namespace myBit.Views
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Command = new Command(() =>
 					{
-						this.Navigation.PushAsync(new BookingMateView());
+						this.Navigation.PushAsync(new BookingRoomView());
 					})
 			};
-			Button next = new Button
+			Button inviteButton = new Button
 			{
-				Text = "Next",
+				Text = "Invite",
 				Font = Font.SystemFontOfSize(NamedSize.Large),
 				BorderWidth = 1,
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand,
-				Command = new Command(() =>
-					{
-						this.Navigation.PushAsync(new BookingInviteView());
-					})
+
 			};
-
-			mainGrid.Children.Add (room,0,0);
-			mainGrid.Children.Add(searchBar,0,1);
-			mainGrid.Children.Add(results,0, 2);
-			mainGrid.Children.Add(back, 0, 6);
-			mainGrid.Children.Add(next, 1, 6);
-
+			mainGrid.Children.Add (invite, 0, 0);
+			mainGrid.Children.Add (date, 0, 1);
+			mainGrid.Children.Add (hour, 1, 1);
+			mainGrid.Children.Add (room, 0, 2);
+			mainGrid.Children.Add (roomId, 1, 2);
+			mainGrid.Children.Add (back, 0, 6);
+			mainGrid.Children.Add (inviteButton, 1, 6);
 			this.Content = mainGrid;
 		}
 	}
