@@ -93,15 +93,30 @@ namespace myBit.Views
 				3,4,3,4
 			);
 			*/
-			int[] intArray = { 0, 1, 2, 3, 4, 5, 6 };
+			String[] stringArray = { "Formal", "Informal" };
+			Picker pickerRoom = new Picker
+			{
+				Title = "Room",
+				VerticalOptions = LayoutOptions.Center
+			};
+			foreach (string i in stringArray)
+			{
+				pickerRoom.Items.Add(i);
+			}
+
+			grid.Children.Add (
+				pickerRoom,1,5,5,6
+			);
+
+			string[] intArray = { "0", "1", "2", "3", "4", "5", "6" };
 			Picker picker = new Picker
 			{
 				Title = "hours",
 				VerticalOptions = LayoutOptions.Center
 			};
-			foreach (int i in intArray)
+			foreach (string i in intArray)
 			{
-				//picker.Items.Add(i);
+				picker.Items.Add(i);
 			}
 
 			grid.Children.Add (
@@ -109,28 +124,7 @@ namespace myBit.Views
 			);
 
 
-			/*
-			grid.Children.Add (
-				new Label { Text = "Date " },
-				1,2,1,2
-			);
-			Button formal = new Button
-			{
-				Text = "Formal",
-				Font = Font.SystemFontOfSize(NamedSize.Large),
-				BorderWidth = 1,
-				HorizontalOptions = LayoutOptions.Center,
-				VerticalOptions = LayoutOptions.CenterAndExpand,
-				BackgroundColor = Color.Red
-			};
-			Button informal = new Button
-			{
-				Text = "Informal",
-				Font = Font.SystemFontOfSize(NamedSize.Large),
-				BorderWidth = 1,
-				HorizontalOptions = LayoutOptions.Center,
-				VerticalOptions = LayoutOptions.CenterAndExpand
-			};
+
 			Button next = new Button
 			{
 				Text = "Next",
@@ -140,13 +134,11 @@ namespace myBit.Views
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Command = new Command(() =>
 					{
-						this.Navigation.PushAsync(new FeedbackView());
+						this.Navigation.PushAsync(new BookingMateView());
 					})
 			};
-			grid.Children.Add(formal, 0, 4);
-			grid.Children.Add(informal, 1, 4);
-			grid.Children.Add(next, 1, 6);
-*/
+			grid.Children.Add(next,1,6,6,8);
+
 			this.Content = grid;
 		}
 	}

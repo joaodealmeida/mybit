@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{CA810941-0A04-47E5-80EC-46BBD9FBCBA1}</ProjectGuid>
+    <ProjectGuid>{650E553D-5606-4F49-AF80-F4218D19EB23}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>myBit.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
@@ -89,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\myBit\myBit.csproj">
-      <Project>{FC22DBAC-5F05-4E20-AEF9-5B248DA5DF7A}</Project>
+      <Project>{B39ACE54-0089-44A5-9AFC-CFB59D9DF2FD}</Project>
       <Name>myBit</Name>
     </ProjectReference>
   </ItemGroup>

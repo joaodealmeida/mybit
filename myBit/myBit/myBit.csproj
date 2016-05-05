@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{FC22DBAC-5F05-4E20-AEF9-5B248DA5DF7A}</ProjectGuid>
+    <ProjectGuid>{B39ACE54-0089-44A5-9AFC-CFB59D9DF2FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>myBit</RootNamespace>
     <AssemblyName>myBit</AssemblyName>
@@ -30,15 +30,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="myBit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Menu\BaseModel.cs" />
-    <Compile Include="Menu\HomeMenuItem.cs" />
-    <Compile Include="Menu\MenuType.cs" />
-    <Compile Include="ViewModels\BaseViewModel.cs" />
-    <Compile Include="ViewModels\IViewModel.cs" />
-    <Compile Include="ViewModels\LoginViewModel.cs" />
-    <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="Views\AboutView.cs" />
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Views\DashboardView.cs" />
@@ -51,6 +43,16 @@
     <Compile Include="Views\PageOneView.cs" />
     <Compile Include="Views\PageTwoView.cs" />
     <Compile Include="Views\SendNotificationView.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\IViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="Menu\BaseModel.cs" />
+    <Compile Include="Menu\HomeMenuItem.cs" />
+    <Compile Include="Menu\MenuType.cs" />
+    <Compile Include="myBit.cs" />
+    <Compile Include="Views\BookingMateView.cs" />
+    <Compile Include="Views\BookingRoomView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -66,8 +68,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Menu\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Menu\" />
   </ItemGroup>
 </Project>

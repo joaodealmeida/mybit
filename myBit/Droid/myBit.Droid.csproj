@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{7BF5DB75-2D0A-457F-9B30-0473D8F661EA}</ProjectGuid>
+    <ProjectGuid>{2DC7EFE6-94E0-4946-AE78-9D42048DF663}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>myBit.Droid</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\myBit\myBit.csproj">
-      <Project>{FC22DBAC-5F05-4E20-AEF9-5B248DA5DF7A}</Project>
+      <Project>{B39ACE54-0089-44A5-9AFC-CFB59D9DF2FD}</Project>
       <Name>myBit</Name>
     </ProjectReference>
   </ItemGroup>
