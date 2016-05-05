@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="iOS/myBit.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="myBit/Views/BookingRoomView.cs">
+    <Files>
+      <File FileName="myBit/Views/BookingRoomView.cs" Line="82" Column="28" />
+      <File FileName="myBit/Views/BookingMateView.cs" Line="72" Column="52" />
+      <File FileName="myBit/Views/BookingInviteView.cs" Line="7" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

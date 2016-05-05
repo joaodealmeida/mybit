@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="myBit.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/MenuView.cs">
+    <Files>
+      <File FileName="Views/RoomCalendarView.cs" Line="67" Column="40" />
+      <File FileName="Views/BookingRoomView.cs" Line="65" Column="19" />
+      <File FileName="Views/MenuView.cs" Line="11" Column="32" />
+      <File FileName="Views/HomeView.cs" Line="35" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
