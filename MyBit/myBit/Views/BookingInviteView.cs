@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace myBit.Views
 {
-	public class BookingInviteView : ContentPage
+	public class BookingInviteView : BaseView
 	{
 		public BookingInviteView ()
 		{
